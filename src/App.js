@@ -3,6 +3,8 @@ import './App.css';
 import Example from './components/Example'
 import HelloWorld from './components/HelloWorld'
 import Greet from './components/Greet'
+import React, { useState, useEffect } from 'react';
+
 
 function App() {
   const user1 = {
@@ -22,7 +24,7 @@ function App() {
     <div>
       <Example></Example>
       <HelloWorld></HelloWorld>
-      <Greet></Greet>
+      <Greet name="Stefanie"></Greet>
     </div>
   );
 }

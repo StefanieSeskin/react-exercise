@@ -1,4 +1,4 @@
-export default function Greet() {
-    return <h2>Hello </h2>
+export default function Greet(props) {
+    return <h2>Hello { props.name }</h2>
 
 }
