@@ -3,6 +3,7 @@ import './App.css';
 import Example from './components/Example'
 import HelloWorld from './components/HelloWorld'
 import Greet from './components/Greet'
+import CounterButton from './components/button1'
 import React, { useState, useEffect } from 'react';
 
 
@@ -26,6 +27,7 @@ function App() {
       <HelloWorld></HelloWorld>
       <Greet firstName={ user1.name.first }></Greet>
       <Greet firstName={ user2.name.first }></Greet>
+      <CounterButton></CounterButton>
     </div>
   );
 }
