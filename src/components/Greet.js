@@ -1,4 +1,5 @@
 export default function Greet(props) {
-    return <h2>Hello { props.name }</h2>
+    // console.log(props)
+    return <h2>Hello { props.firstName }</h2>
 
 }

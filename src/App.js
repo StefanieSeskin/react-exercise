@@ -24,7 +24,8 @@ function App() {
     <div>
       <Example></Example>
       <HelloWorld></HelloWorld>
-      <Greet name="Stefanie"></Greet>
+      <Greet firstName={ user1.name.first }></Greet>
+      <Greet firstName={ user2.name.first }></Greet>
     </div>
   );
 }
