@@ -1,3 +1,6 @@
+// worked before I added the user stuff to make the UserCard.
+//the buttons worked.  I don't know what I changed.  I did commit and
+//don't want to push this.
 import logo from './logo.svg';
 import './App.css';
 import Example from './components/Example'
@@ -5,6 +8,7 @@ import HelloWorld from './components/HelloWorld'
 import Greet from './components/Greet'
 import CounterButton from './components/button1'
 import CountFive from './components/button2'
+import UserCard from './components/UserCard'
 import React, { useState, useEffect } from 'react';
 
 
@@ -25,14 +29,16 @@ function App() {
     },
   }
   return (
-    <div>
+      <div>
       <Example></Example>
       <HelloWorld></HelloWorld>
       <Greet firstName={ user1.name.first }></Greet>
       <Greet firstName={ user2.name.first }></Greet>
       <CounterButton></CounterButton>
-      <p><CountFive></CountFive></p>
+      <CountFive></CountFive>
     </div>
+      // <UserCard user1={ user1 }>
+      //   user2={ user2 }</UserCard>
   );
 }
 
